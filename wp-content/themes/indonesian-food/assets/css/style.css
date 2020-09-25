@@ -1,0 +1,118 @@
+#app {
+    display: flex;
+    min-height: 100vh;
+}
+#main-sidebar {
+    width: 90px;
+    box-shadow: 0px 4px 9px -3px rgba(255, 61, 0, 0.4);
+    height: 100vh;
+    position: fixed
+}
+#main {
+    flex-grow: 1;
+    margin-left: 90px;
+}
+#main-navbar {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+#main-sidebar {
+    padding: 2rem;
+}
+#main-sidebar .food-icon img {
+    width: 28px;
+}
+.menu {
+    display: flex;
+    list-style: none;
+}
+.menu .menu-item {
+    margin: 0 2rem;
+    font-size: 22px;
+    font-weight: 500;
+    position: relative
+}
+.menu .menu-item:first-child {
+    margin-left: 0;
+}
+.menu .menu-item:not(.active):not(:first-child) a {
+    color: #828282
+}
+.menu .menu-item:first-child:after {
+    content: '';
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    background-color: #FF3D00;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+}
+#hero {
+    margin-top: 3.5rem;
+}
+#hero .hero-text {
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 4.5rem;
+    margin-bottom: 2rem;
+}
+#hero .hero-description {
+    line-height: 1.4rem;
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+}
+#hero .btn {
+    margin-top: 2rem;
+}
+#hero .hero-right {
+    position: relative;
+}
+
+#hero .hero-right img {
+    width: 120%;
+    position: absolute;
+    right: 0rem;
+    top: -5rem;
+}
+#bg {
+    background-color: #FF3D00;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 36%;
+}
+#hero .most-loved {
+    font-size: 1.2rem;
+    margin-top: 5rem;
+}
+#hero .most-loved h3 {
+    margin-bottom: 2rem;
+}
+#hero .most-loved img {
+    width: 100%;
+}
+#hero h3 {
+    color: #4F4F4F;
+}
+#hero .most-loved .product-name {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: .5rem;
+
+}
+#hero .most-loved .product-price {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    color: #FF3D00
+}
+
+@media screen and (max-width: 1199px) {
+    #bg, .hero-right {
+        display: none;
+    }
+}

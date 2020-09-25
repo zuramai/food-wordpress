@@ -1,0 +1,156 @@
+@font-face {
+    font-family: 'Poppins';
+    font-weight: 400;
+    src: url(./../fonts/Poppins-Regular.ttf)
+}
+@font-face {
+    font-family: 'Poppins';
+    font-weight: 500;
+    src: url(./../fonts/Poppins-Medium.ttf)
+}
+@font-face {
+    font-family: 'Poppins';
+    font-weight: 600;
+    src: url(./../fonts/Poppins-SemiBold.ttf)
+}
+@font-face {
+    font-family: 'Poppins';
+    font-weight: 700;
+    src: url(./../fonts/Poppins-Bold.ttf)
+}
+@font-face {
+    font-family: 'Roboto';
+    font-weight: 400;
+    src: url(./../fonts/Roboto-Regular.ttf)
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins';
+}
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 4rem;
+}
+.row {
+    display:flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+.row + .row {
+    margin-top: 1rem;
+}
+[class*='col-'] {
+    padding: 0 15px;
+}
+.btn {
+    padding: 1rem 1.2rem;
+    border: none;
+    transition: all 2s;
+    cursor: pointer;
+}
+.btn-primary {
+    background-color: #FF3D00;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.1rem;
+    line-height: 1.4rem;
+}
+.btn-primary:hover {
+}
+.btn-lg {
+    border-radius: 8px;
+    padding: 1.2rem 2.4rem;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.23);
+}
+a,p,span {
+    color: #333;
+}
+a {
+    text-decoration: none;
+    transition: all .2s;
+}
+a:hover {
+    color: #FF3D00;
+}
+p {
+    font-family: 'Roboto';
+}
+.pl-0 {
+    padding-left: 0 !important;
+}
+.col-1 { flex: none; width: calc(100% / 12 * 1) }
+.col-2 { flex: none; width: calc(100% / 12 * 2) }
+.col-3 { flex: none; width: calc(100% / 12 * 3) }
+.col-4 { flex: none; width: calc(100% / 12 * 4) }
+.col-5 { flex: none; width: calc(100% / 12 * 5) }
+.col-6 { flex: none; width: calc(100% / 12 * 6) }
+.col-7 { flex: none; width: calc(100% / 12 * 7) }
+.col-8 { flex: none; width: calc(100% / 12 * 8) }
+.col-9 { flex: none; width: calc(100% / 12 * 9) }
+.col-10 { flex: none; width: calc(100% / 12 * 10) }
+.col-11 { flex: none; width: calc(100% / 12 * 11) }
+.col-12 { flex: none; width: calc(100% / 12 * 12) }
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 720px;
+    }
+    .col-md-1 { flex: none; width: calc(100% / 12 * 1) }
+    .col-md-2 { flex: none; width: calc(100% / 12 * 2) }
+    .col-md-3 { flex: none; width: calc(100% / 12 * 3) }
+    .col-md-4 { flex: none; width: calc(100% / 12 * 4) }
+    .col-md-5 { flex: none; width: calc(100% / 12 * 5) }
+    .col-md-6 { flex: none; width: calc(100% / 12 * 6) }
+    .col-md-7 { flex: none; width: calc(100% / 12 * 7) }
+    .col-md-8 { flex: none; width: calc(100% / 12 * 8) }
+    .col-md-9 { flex: none; width: calc(100% / 12 * 9) }
+    .col-md-10 { flex: none; width: calc(100% / 12 * 10) }
+    .col-md-11 { flex: none; width: calc(100% / 12 * 11) }
+    .col-md-12 { flex: none; width: calc(100% / 12 * 12) }
+}
+
+@media screen and (min-width: 992px) {
+    .container {
+        width: 960px;
+    }
+    .col-lg-1 { flex: none; width: calc(100% / 12 * 1) }
+    .col-lg-2 { flex: none; width: calc(100% / 12 * 2) }
+    .col-lg-3 { flex: none; width: calc(100% / 12 * 3) }
+    .col-lg-4 { flex: none; width: calc(100% / 12 * 4) }
+    .col-lg-5 { flex: none; width: calc(100% / 12 * 5) }
+    .col-lg-6 { flex: none; width: calc(100% / 12 * 6) }
+    .col-lg-7 { flex: none; width: calc(100% / 12 * 7) }
+    .col-lg-8 { flex: none; width: calc(100% / 12 * 8) }
+    .col-lg-9 { flex: none; width: calc(100% / 12 * 9) }
+    .col-lg-10 { flex: none; width: calc(100% / 12 * 10) }
+    .col-lg-11 { flex: none; width: calc(100% / 12 * 11) }
+    .col-lg-12 { flex: none; width: calc(100% / 12 * 12) }
+}
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 1140px;
+    }
+    .col-xl-1 { flex: none; width: calc(100% / 12 * 1) }
+    .col-xl-2 { flex: none; width: calc(100% / 12 * 2) }
+    .col-xl-3 { flex: none; width: calc(100% / 12 * 3) }
+    .col-xl-4 { flex: none; width: calc(100% / 12 * 4) }
+    .col-xl-5 { flex: none; width: calc(100% / 12 * 5) }
+    .col-xl-6 { flex: none; width: calc(100% / 12 * 6) }
+    .col-xl-7 { flex: none; width: calc(100% / 12 * 7) }
+    .col-xl-8 { flex: none; width: calc(100% / 12 * 8) }
+    .col-xl-9 { flex: none; width: calc(100% / 12 * 9) }
+    .col-xl-10 { flex: none; width: calc(100% / 12 * 10) }
+    .col-xl-11 { flex: none; width: calc(100% / 12 * 11) }
+    .col-xl-12 { flex: none; width: calc(100% / 12 * 12) }
+}
+@media screen and (min-width: 1600px) {
+    .container {
+        width: 1500px;
+    }
+}

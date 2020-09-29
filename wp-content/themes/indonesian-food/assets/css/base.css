@@ -81,8 +81,17 @@ a:hover {
 p {
     font-family: 'Roboto';
 }
+.z-5 {
+    z-index: 5;
+}
 .pl-0 {
     padding-left: 0 !important;
+}
+.d-flex {
+    display: flex;
+}
+.justify-content-between {
+    justify-content: space-between;
 }
 .col-1 { flex: none; width: calc(100% / 12 * 1) }
 .col-2 { flex: none; width: calc(100% / 12 * 2) }
